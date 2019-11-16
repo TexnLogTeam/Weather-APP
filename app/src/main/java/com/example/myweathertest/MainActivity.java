@@ -21,17 +21,33 @@ import java.util.Calendar;
 
 public class MainActivity extends AppCompatActivity {
 
-    TextView t1_temp,t2_city,t3_description,t4_date;
+    TextView t1_temp,t1_city,t1_description,t1_date,t2_temp,t2_city,t2_description,t2_date,
+            t3_temp,t3_city,t3_description,t3_date,t4_temp,t4_city,t4_description,t4_date;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        t1_temp = (TextView)findViewById(R.id.textView);
-        t2_city = (TextView)findViewById(R.id.textView4);
-        t3_description = (TextView)findViewById(R.id.textView3);
-        t4_date = (TextView)findViewById(R.id.textView4);
+        t1_temp = (TextView)findViewById(R.id.textTemp1);
+        t1_city = (TextView)findViewById(R.id.textCity1);
+        t1_description = (TextView)findViewById(R.id.textDesc1);
+        t1_date = (TextView)findViewById(R.id.textDate1);
+
+        t2_temp = (TextView)findViewById(R.id.textTemp2);
+        t2_city = (TextView)findViewById(R.id.textCity2);
+        t2_description = (TextView)findViewById(R.id.textDesc2);
+        t2_date = (TextView)findViewById(R.id.textDate2);
+
+        t3_temp = (TextView)findViewById(R.id.textTemp3);
+        t3_city = (TextView)findViewById(R.id.textCity3);
+        t3_description = (TextView)findViewById(R.id.textDesc3);
+        t3_date = (TextView)findViewById(R.id.textDate3);
+
+        t4_temp = (TextView)findViewById(R.id.textTemp4);
+        t4_city = (TextView)findViewById(R.id.textCity4);
+        t4_description = (TextView)findViewById(R.id.textDesc4);
+        t4_date = (TextView)findViewById(R.id.textDate4);
 
         find_weather();
     }
