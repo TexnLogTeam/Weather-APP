@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
         t1_temp = (TextView)findViewById(R.id.textView);
         t2_city = (TextView)findViewById(R.id.textView4);
         t3_description = (TextView)findViewById(R.id.textView3);
-        t4_date = (TextView)findViewById(R.id.textView4);
+        
 
         find_weather();
     }
